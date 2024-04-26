@@ -20,3 +20,11 @@ li {
     padding: 10px;
     background: #e9ecef;
 }
+
+.status-admitted {
+    background-color: #c8e6c9;
+}
+
+.status-denied {
+    background-color: #ffcdd2;
+}

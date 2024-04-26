@@ -30,9 +30,7 @@
                             Average GPA: {{ application.college_id.gpa_avg }} <br>
                             Average SAT: {{ application.college_id.math_SAT_avg|add:application.college_id.eng_SAT_avg}} <br>
                             Applied: {{ application.date_applied }} <br>
-                            <span class="{% if application.app_status == 'admitted' %}status-admitted{% elif application.app_status == 'denied' %}status-denied{% endif %}">
-                                Status: {{ application.app_status }}
-                            </span>
+                            Status: {{ application.app_status }}
                         </li>
                     {% empty %}
                         <li>No applications found.</li>

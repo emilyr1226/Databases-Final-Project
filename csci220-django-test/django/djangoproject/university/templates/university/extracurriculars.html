@@ -16,12 +16,12 @@
                     {% load custom_filters %}
                     {% for extracurricular_type, activities in student.extracurriculars.items %}
                         <div>
-                            <p><strong>{{ extracurricular_type|reformat }}</strong></p>
+                            <strong>Extracurricular Type: {{ extracurricular_type|reformat }}</strong>
                             <ul>
                                 {% for participation in activities %}
                                     <li>
-                                        <p>{{ participation.extracurricular_name.name }}</p>
-                                        <p>{{ participation.hours }} hours per week</p>
+                                        Activity Name: {{ participation.extracurricular_name.name }}<br>
+                                        Time: {{ participation.hours }} hours per week
                                     </li>
                                 {% endfor %}
                             </ul>
