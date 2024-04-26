@@ -11,14 +11,14 @@
     <ul>
         {% for guide in guidance %}
             <li>
-                <strong>Name: {{ guide.first_name }} {{ guide.last_name }} </strong><br>
+                <strong>Counselor Name: {{ guide.first_name }} {{ guide.last_name }} </strong><br>
                 Email: {{ guide.email }} <br>
                 Start Date: {{ guide.start_date }} <br> 
                 Supervisees:
                 <ul>
                     {% for student in guide.student_set.all %}
                         <li>
-                            <strong>Name: {{ student.first_name }} {{ student.last_name }}</strong><br>
+                            <strong>Student Name: {{ student.first_name }} {{ student.last_name }}</strong><br>
                             Email: {{ student.email }} <br>
                             GPA: {{ student.GPA }}
                         </li>
